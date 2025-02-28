@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Buscador de camaras</h1>
+    <form action="">
+        <label for="select">Selecciona la marca de la camara</label>
+
+        <select name="select">
+            <option value="1">Sony</option>
+            <option value="2">Canon</option>
+            <option value="3">Nikon</option>
+            <option value="4">Fujifilm</option>
+            <option value="5">Olympus</option>
+            <option value="6">Panasonic</option>
+        </select>
+
+        <br>
+        <br>
+        <label for="potencia">Selecciona el precio (100-1000)</label>
+        <input type="range" name="potencia" min="100" max="1000" value="100">
+        <br>
+        <br>
+        <label for="tamaño">Selecciona el tamaño de la camara</label>
+        <br>
+
+        <label for="Pequeña">Pequeña</label>
+        <input type="radio" name="tamaño" value="pequeña">
+        <br>
+
+        <label for="mediana">Mediana</label>
+        <input type="radio" name="tamaño" value="mediana">
+        <br>
+
+        <label for="mediana">Grande</label>
+        <input type="radio" name="tamaño" value="grande">
+
+        <br>
+        <br>
+        <label for="color">Selecciona el color de la camara </label>
+        <input type="color" name="color">
+    </form>
+</body>
+
+</html>
