@@ -469,7 +469,9 @@
       background-color: #e77000;
   }
   
-  
+  a{
+      text-decoration: none;
+  }
   
   
   /*Main*/
