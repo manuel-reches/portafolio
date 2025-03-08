@@ -1,0 +1,535 @@
+/*Generales*/
+:root {
+    --color-br: #212121;
+    --color-br-2: #333333;
+  
+    --color-text-white: white;
+    --color-br-header: #171717;
+    --element-color: rgb(37, 37, 37);
+    --color-title-blue: #0187e2;
+  }
+  
+  * {
+      font-family: "proxima nova semibold", "Helvetica Neue", Helvetica, Arial,
+      Sans-serif;
+      color: var(--color-text-white);
+      max-width: 100%;    
+  }
+  
+  html {
+      scroll-behavior: smooth;
+  }
+  
+  main::-webkit-scrollbar {
+      display: none; 
+  }
+  
+  body {
+      position: relative;
+      height: 100vh;
+      width: 100vw;
+      background-color: var(--color-br);
+      margin: 0px;
+      overflow-x: hidden;
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------*/
+  
+  
+  /* HEADER */
+  
+  #header {
+      display: flex;
+  
+      height: 12vh;
+      width: 100%;
+  
+      justify-content: space-between;
+      align-items: center;    
+  
+      background-color: var(--color-br-header);
+  }
+  
+      .logo-container {
+          width: 40%;   
+  
+          margin-left: 4rem ; 
+          justify-content: left;
+      }   
+  
+      .logo {
+          width: 150px;
+      }
+  
+      .ico-instagram, .ico-twitter, .ico-github {
+          width: 40px;
+      }
+  
+  /*--------------------------------------------------------------------------------------------------------*/
+  
+  /* NAVBAR */
+  
+  nav{
+      display: flex;
+      
+      height: 100%;
+      width: 100%;
+      
+      align-items: center;
+      justify-content: right;
+  
+      padding: 0px;
+      margin: 0px;
+  }
+  
+  
+  nav ul, li {
+      display: flex;
+      
+      padding: 0px;
+      margin: 0px;
+  }
+  
+  
+  nav a {
+      font-size: 1.4rem;
+      list-style: none;
+      align-content: center;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+  }
+  
+  nav a:hover {
+      transform: scale(1.1);
+       
+      color: var(--color-text-white);
+      background-color: #0187e2;
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------*/
+  
+  /* Main */
+  main {
+      scroll-snap-type: y mandatory;
+  
+      width: 100%;
+      height: calc(100vh - 12vh);
+      
+      overflow-y: auto; 
+      overflow-x: hidden;
+  }
+  
+  .hero-section {
+      width: 100%;
+      height: 100%;
+  }
+      
+  .h1-container {
+      width: 50%;
+      height: calc(100vh - 12vh);
+  
+      float: left;
+      align-content: center;
+  }
+  
+  .foto-container {
+      width: 50%;
+      height: calc(100vh - 12vh);
+  
+      float: right;
+      align-content: center
+  }
+  
+  .foto {
+      width: 500px;
+      border-radius: 5%;
+  }
+  
+  .title-hero {
+      font-size: 2.8rem;
+      
+      margin: 0px;
+      margin-left: 100px;
+      padding: 0px;
+      color: #0187e2;
+  }
+  
+  .title-name-hero {
+      font-size: 6rem;
+  }
+  
+  /* GENERALES PARA LAS SECCIONES */
+  
+  .section { 
+      
+      min-height: calc(100vh - 12vh);
+      width: 100%;  
+      
+      scroll-snap-align: center; 
+      
+      align-items: center;
+      justify-content: center;
+  }
+  
+  
+  /*--------------------------------------------------------------------------------------------------------*/
+  /*SECCION SOBRE MI*/
+  .about-section {
+      width: 100%;
+      height: calc(100vh - 12vh);
+      background-color: var(--color-br-2);
+  }
+  
+  .info-container-about {
+      width: 50%;
+      height: calc(100vh - 12vh);
+  
+      align-content: center;
+  
+      float: left;
+  }
+  
+  .title-about {
+      font-size: 6rem;
+      
+      margin-left: 6rem;
+      margin-bottom: 5rem;
+      padding: 0px;
+      
+      text-align: left ;
+      
+      color: var(--color-title-blue);
+  }
+  
+  .text-about {
+      
+      font-size: 1.5rem;
+      
+      margin: 0px;
+      padding: 0px;
+  
+      text-align: left;
+      margin-bottom: 10rem;
+  
+      margin-left: 6rem;
+  }
+  
+  
+  .skills-container {
+      display: inline;
+      height: calc(100vh - 12vh);       
+      width: 50%;
+  
+      float: right;
+      align-content: center;
+  }       
+  
+  .skills {
+      display: flex;
+      
+      font-size: 1.5rem;
+      margin: 0px;
+      padding: 0px;
+  
+      justify-content: center;
+  }
+  
+  
+  .element {
+      display: inline;
+  
+      margin: 10px;
+      padding: 30px;
+      
+      text-align: center;
+  
+      border-radius: 10px;
+      background-color: var(--element-color);
+  }
+  
+  .icon-skills {
+      width: 120px;
+      height: 120px;
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------*/
+  /*SECCION EJERCICIOS*/
+  
+  .project-section {
+      width: 100%;
+      height: calc(100vh - 12vh);
+      background-color: var(--color-br);
+  }
+  
+  .title-project {
+      font-size: 4rem;
+      
+      margin-top: 5rem;
+  
+      padding: 0px;
+      text-align: center ;
+      
+      color: var(--color-title-blue);
+  }
+  
+  .text-project {
+      
+      font-size: 1.5rem;
+      
+      margin: 0px;
+      padding: 0px;
+  
+      text-align: center;
+  
+      margin-left: 6rem;
+  }
+  
+  
+  .info-container-project {
+      width: 100%;
+      height: calc(50vh - 12vh);
+      float: left;
+  }
+  
+  .ejercicios-practicas {
+      width: 100%;
+      height: calc(50vh - 12vh);
+      text-align: center;
+  }
+  
+  .ejercicios-HTML {
+      width: 50%;
+      height: calc(50vh - 12vh);
+      float: left;
+  
+  }
+  .ejercicios-CSS {
+      width: 50%;
+      height: calc(50vh - 12vh);
+      float: right;
+      text-align: center;
+      justify-content: right;
+  }
+  
+  .ejercicio-container {
+      margin: 0px;
+      padding-top: 20px;
+  }
+  
+  .subtitle-project {
+      font-size: 4em;
+  }
+  
+  .html-color{
+      color: #e77000;
+  }
+  
+  .css-color {
+      color: #0187e2;
+  }
+  
+  
+  /*--------------------------------------------------------------------------------------------------------*/
+  
+  /*SECTION FORMULARIO DE CONTACTO*/
+  .contact-section {
+      width: 100%;
+      height: calc(100vh - 12vh);
+      background-color: var(--color-br-2);
+  }
+  
+  .title-contact {
+      font-size: 4rem;
+      
+      margin-top: 5rem;
+  
+      padding: 0px;
+      text-align: center ;
+      
+      color: var(--color-title-blue);
+  }
+  
+  .text-contact {
+      
+      font-size: 1.5rem;
+      
+      margin: 0px;
+      padding: 0px;
+  
+      text-align: center;
+  
+  }
+  
+  
+  .info-container-contact {
+      width: 100%;
+      height: calc(50vh - 12vh);
+      float: left;
+  }
+  
+  .form-container {
+      display: flex;
+      width: 100%;
+      height: calc(50vh - 12vh);
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  
+  /* FORMULARIO*/
+  
+  .form {
+      width: 900px;
+      
+      border-radius: 12px;
+      box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      background-color: rgb(106, 106, 106);
+  }
+  
+  label {
+      display: block;
+      margin-top: 10px;
+  }
+  
+  input, textarea {
+      width: 90%;
+  
+      padding: 1rem;
+      margin-top: 1rem;
+  
+      border: 1px solid;
+      border-color: var(--color-text-white);
+      border-radius: 4px;
+  
+      color: #000000;
+  }
+  
+  button {
+      width: 50%;
+  
+      margin-top: 15px;
+      padding: 10px;
+      
+      border: none;
+      border-radius: 4px;
+  
+      color: rgb(0, 0, 0);
+      background: white;
+  }
+  
+  button:hover {
+      background: #252525;
+      color: white;
+  }
+  /*--------------------------------------------------------------------------------------------------------*/
+  /*Pagina actividades Activividades*/
+  
+  /*Header / Nav*/
+  
+  .inicio {
+      
+      justify-content: left;
+  
+      padding: 0px;
+      margin-left:300px;
+  }
+  
+  .nav-inicio {
+      display: flex;
+      
+      height: 100%;
+      width: 100%;
+  
+  }
+  
+  #HTML a {
+      font-size: 1.4rem;
+  
+      list-style: none;
+      align-content: center;
+      text-decoration: none;
+  
+      padding: 10px 15px;
+      border-radius: 5px;
+  }
+  
+  .nav-negro a:hover {
+      transform: scale(1.1);
+  
+      color: rgb(0, 0, 0);
+      background-color: #ffffff;
+  }
+  
+  .nav-html a:hover {
+      transform: scale(1.1);
+  
+      color: white;
+      background-color: #e77000;
+  }
+  
+  a{
+      text-decoration: none;
+  }
+  
+  
+  /*Main*/
+  /*Actividades HTML*/
+  
+  .actividades {
+      display: flex;
+  
+      width: 100%;
+      height: calc(100vh - 12vh);
+  
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      background-color: var(--color-br);
+  }
+  
+  
+  table {
+      width: 90%;
+      height: 80%;
+      
+      border-collapse: collapse;
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+      
+  }
+  
+  th, td {
+      border: 1px solid;
+      border-color: black ;
+      padding: 15px;
+      text-align: center;
+  }
+  
+  tr td {
+      color: rgb(0, 0, 0);
+  }
+  td a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+  }
+  
+  th {
+      font-size: 18px;
+  
+      color: rgb(255, 255, 255);
+      background-color: #5f5f5f;
+  }
+  .titulo-actividades {
+      font-size: 20px;
+      background-color: #dddddd;
+  }
+  
+  .title-actividades {
+      font-size: 3rem;
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------*/
+  
